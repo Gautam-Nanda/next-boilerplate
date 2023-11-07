@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "iron-session": "^6.3.1",
     "next": "14.0.1",
     "prisma": "^5.5.2",
     "react": "^18",
