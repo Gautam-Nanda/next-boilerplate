@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^5.5.2",
+    "bcrypt": "^5.1.1",
     "iron-session": "^6.3.1",
     "next": "14.0.1",
     "prisma": "^5.5.2",
