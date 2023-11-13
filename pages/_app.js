@@ -6,11 +6,11 @@ import '../styles/root/_global.scss'
 
 function MyApp({ Component, pageProps, user }) {
   return (
-      <AuthProvider ssrUser={user}>
-        <ChakraProvider>
-          <Component {...pageProps} />
-        </ChakraProvider>
-      </AuthProvider>
+    <AuthProvider user={user}>
+      <ChakraProvider>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </AuthProvider>
   )
 }
 
