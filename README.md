@@ -36,7 +36,7 @@ Before you begin, make sure you have the following software installed on your ma
 
 3. Configure environment variables
 
-    ```bash
+   ```bash
    DATABASE_URL = 'YOUR_DATABASE_URL'
    APPLICATION_SECRET='YOUR_APPLICATION_SECRET'
    NODE_ENV='NODE_ENV'
@@ -44,7 +44,7 @@ Before you begin, make sure you have the following software installed on your ma
 
 4. Start development server
 
-    ```bash
+   ```bash
    npm run dev
    or
    yarn dev
@@ -53,6 +53,7 @@ Before you begin, make sure you have the following software installed on your ma
 5. Your application should now be running at http://localhost:3000.
 
 **Note**: The `DATABASE_URL` environment variable should be a connection string to your database, Also you need to update the provider in `schema.prisma` file according to your database provider.
+
 ## Usage
 
 - **Authentication Routes**: The `pages/api/auth` folder contains authentication API routes (`login.js`, `signup.js`, `logout.js`) for you to implement your authentication logic.

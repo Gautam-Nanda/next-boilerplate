@@ -1,5 +1,5 @@
 import { withIronSessionSsr } from "iron-session/next";
-import { ironOptions } from "../lib/ironOptions";
+import { ironOptions } from "@/lib/ironOptions";
 import { useState, createContext } from "react";
 
 export const AuthContext = createContext({});
@@ -13,7 +13,7 @@ export const getUserFromSession = withIronSessionSsr(async ({ req }) => {
     }
 }, ironOptions);
 
-export function AuthProvider({ children, ssrUser, ...props })  {
+export function AuthProvider({ children, ssrUser, ...props }) {
     const [user, setUser] = useState(ssrUser);
     const auth = {
         user,
